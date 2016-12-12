@@ -1,0 +1,215 @@
+{% extends 'pages/base.html' %}
+{% load staticfiles %}
+{% block content %}
+            <!-- Header -->
+            <div id="header" class="header">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="{% url 'home' %}">
+                            <img src="{% static 'img/logo-light-spectrum-one-v2.png' %}" />
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+
+                    <!--Navigation Icon-->
+                    <div class="nav-menu-icon">
+                        <a><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!--End Navigation Icon-->
+
+                    <!-- Navigation Menu -->
+                    <div class="nav-menu">
+                        <ul class="nav-menu-inner">
+                            <li><a href="{% url 'careers' %}">Careers</a><li>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'home' %}#about">About Us</a></li>
+                            <li><a href="{% url 'home' %}#recent-works">Recent Works</a></li>
+                            <li><a href="{% url 'home' %}#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Navigation Menu -->
+                </div>
+            </div>
+            <!-- End Header -->
+
+            <!--Intro Section-->
+            <section id="intro" class="intro-fullscreen-small">
+                <!--Static Hero-->
+                <div class="intro-media" style="background: linear-gradient(to bottom right,
+#3bb2d0, #3887be);"></div>
+                <div class="spacer-90"></div>
+                <div class="intro-caption-waper dark-bg">
+                    <div class="intro-full-height-small container">
+                        <div class="intro-content">
+                            <div class="intro-content-inner">
+                                <h1 class="intro-title mb-10">Careers</h1>
+                                <h4 class="page-title-alt mb-10">Are you a friendly, results-oriented person that wants</h4>
+                                <h4 class="page-title-alt mb-40">to do things the right way? Join our team!</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Static Hero-->
+            </section>
+            <!-- End Intro Section-->
+            <!-- ` Process Section -->
+            <section id="process" class="section-padding white-bg">
+                <div class="spacer-30"></div>
+                <div class="container text-left">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+
+                            <div class="career-job" id="title-django-web-developer">
+                                <p class="lead-big" style="margin-bottom:0px !important;"><b>Django Developer</b></p>
+                                <p class="lead" style="margin-bottom: 5px !important;">Location: Quezon City, National Capital Region</p>
+                                <a class="view-more btn btn-md btn-color scroll-down" style="width:94px !important; padding-left:5px !important; padding-right:5px !important;">View more</a>
+                            </div>
+                            <div id="description-django-web-developer" style="display:none;">
+                                <div class="spacer-30"></div>
+
+                                <p class="large">Spectrum One builds web and mobile apps with Django. Join our sharp team and be part of an open, collaborative culture that puts quality at the heart of each project. We’re passionate about solving complex challenges especially when they have a social impact.</p>
+
+                                <p class="large">We are looking for a Django Web Developer who enjoys working on a team and is excited to work on new and diverse projects. We would like to develop a long term relationship with someone who has between 10 and 30 hours per week available. This position requires on site work in our Quezon City, NCR office but flexi-time can be arranged.</p>
+                                <div class="spacer-30"></div>
+                                <p class="lead"><b>As a Django Web Developer, you will:</b></p>
+                                <ul class="jobs-list">
+                                    <li>Work collaboratively with the development team to get a feel for and learn about our development process</li>
+                                    <li>Clone Git and Mercurial code repositories and configure development environments running Django projects</li>
+                                    <li>Model and implement intricate data structures relational databases such as PostgreSQL</li>
+                                    <li>Create, implement and edit Django templates with compliant HTML5/CSS3.</li>
+                                    <li>Help setup and run projects in production environments on Linux (Debian-flavor) with Nginx, Gunicorn, RabbitMQ, Celery, Redis and other tools frequently deployed alongside Django web apps</li>
+                                    <li>Write complex Django apps following client specifications while maintaining a high level of unit test coverage to catch and prevent feature regressions</li>
+                                    <li>Deploy your changes to development servers frequently so clients see progress and feel connected to the process</li>
+                                    <li>Perform code reviews and use the gitflow branching model to stay in sync with the team</li>
+                                    <li>Follow agile development methodologies and take part in weekly team scrums and standup meetings</li>
+                                </ul>
+                                <div class="spacer-15"></div>
+                                <p class="lead"><b>Spectrum One is looking for a professional Django Web Developer who:</b></p>
+                                <ul class="jobs-list">
+                                    <li>Enjoys working on a small team and is excited to make highly customized web apps</li>
+                                    <li>Could visit our office frequently to become acquainted and collaborate with the team</li>
+                                    <li>Has a strong grasp of Django development techniques and always stays on top of the latest development best practices and tools</li>
+                                </ul>
+                                <div class="center-block"><a class="btn btn-md btn-color" href="{% url 'home' %}#contact-us" style="font-size:20px;"><b>Apply for this position</b></a>
+                                </div>
+                            </div>
+
+                            <div class="spacer-30"></div>
+                            <hr style="border-top: 2px solid #f1f1f1 !important;"/>
+                            <div class="spacer-30"></div>
+
+
+                            <div class="career-job" id="title-python-junior-developer">
+                                <p class="lead-big" style="margin-bottom:0px !important;"><b>Junior Python Developer</b></p>
+                                <p class="lead" style="margin-bottom: 5px !important;">Location: Quezon City, National Capital Region</p>
+                                <a class="view-more btn btn-md btn-color scroll-down" style="width:94px !important; padding-left:5px !important; padding-right:5px !important;">View more</a>
+                            </div>
+                            <div id="description-python-junior-developer" style="display:none;">
+                                <div class="spacer-30"></div>
+
+                                <p class="large">Spectrum One builds web and mobile apps with Django. Join our sharp team and be part of an open, collaborative culture that puts quality at the heart of each project. We’re passionate about solving complex challenges especially when they have a social impact.</p>
+
+                                <p class="large">We are looking for a Trainee Python Developer who is eager to learn and eventually work with a team on new and diverse projects. We would like to develop a long term relationship with someone who has 40 hours per week available. This position requires on site work in our Quezon City, NCR office, but flexi-time can be arranged.</p>
+                                <div class="spacer-30"></div>
+                                <p class="lead"><b>As a Junior Python Developer, you will:</b></p>
+                                <ul class="jobs-list">
+                                    <li>Work on our recommended tutorials and online resources</li>
+                                    <li>Be able to ask us as many questions as you would like</li>
+                                    <li>Try out pair programming with us to speed up your learning</li>
+                                    <li>Work collaboratively with our development team to get a feel for and learn about our development process</li>
+                                    <li>Learn how to write simple Django apps following client specifications</li>
+                                    <li>Follow agile development methodologies and take part in daily standup meetings</li>
+                                </ul>
+                                <div class="spacer-15"></div>
+                                <p class="lead"><b>Spectrum One is looking for a motivated Python Junior Developer who:</b></p>
+                                <ul class="jobs-list">
+                                    <li>Loves building stuff with code</li>
+                                    <li>Is an excellent team-worker</li>
+                                    <li>Is a good communicator</li>
+                                    <li>Has an enquiring mind and who looks at the bigger picture</li>
+                                    <li>Is a good problem-solver</li>
+                                    <li>Has the ability to code requirements in a concise, clear and logical manner in line with standards</li>
+                                </ul>
+
+                                <p class="large">Experience of one or more of the following is advantageous: Python, C, Java, SQL, DBMS</p>
+
+                                <p class="large">If you can put a tick against the above skills, and would appreciate the opportunity to offer and develop your skills with an exciting software development company, don't hesitate to message us!</p>
+
+                                <div class="center-block mb-30"><a class="btn btn-md btn-color" href="{% url 'home' %}#contact-us" style="font-size:20px;"><b>Apply for this position</b></a>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+            </section>
+            <!-- End Work Process Section -->
+
+            <div class="spacer-90"></div>
+
+            <!--Footer Section-->
+            <footer id="footer" class="footer section-padding gray-bg">
+                <div class="container text-center">
+
+                    <!--Footer Logo-->
+                    <div class="footer-logo mb-25 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
+                        <a href="#">
+                            <img src="{% static 'img/logos/logo-spectrum-one.png' %}" alt="" />
+                        </a>
+                    </div>
+                    <!--End Footer Logo-->
+
+                    <!-- Copyright -->
+                    <p class="copyright mb-25">
+                        &copy; 2015 <a><b>Spectrum One</b></a>. All Rights Reserved.<br>
+                        Powered by <a href="http://www.spectrumone.co/" target="_blank"><b>Spectrum One</b></a>
+                    </p>
+                    <!-- Copyright -->
+
+                    <!-- Social -->
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/spectrumonetech" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/spectrumonetech" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/spectrum-one-it-solutions" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                    <!-- End Social -->
+
+                </div>
+            </footer>
+            <!-- End of footer section -->
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript">
+    $('#title-django-web-developer').click(function() {
+        if ($(this).hasClass("career-active")) {
+            $(this).removeClass("career-active");
+            $('#description-django-web-developer').slideUp(500);
+            $(this).children('.view-more').text('view more');
+        } else {
+            $(this).addClass("career-active");
+            $('#description-django-web-developer').slideDown(500);
+            $(this).children('.view-more').text('hide');
+        }
+    });
+    $('#title-python-junior-developer').click(function() {
+        if ($(this).hasClass("career-active")) {
+            $(this).removeClass("career-active");
+            $('#description-python-junior-developer').slideUp(500);
+            $(this).children('.view-more').text('view more');
+        } else {
+            $(this).addClass("career-active");
+            $('#description-python-junior-developer').slideDown(500);
+            $(this).children('.view-more').text('hide');
+        }
+    });
+
+
+</script>
+{% endblock %}

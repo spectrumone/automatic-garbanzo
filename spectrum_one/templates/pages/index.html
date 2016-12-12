@@ -1,0 +1,486 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Spectrum One Technologies</title>
+    <meta name="description" content="Spectrum One - Your next IT Solutions Provider." />
+    <meta name="keywords" content="creative, portfolio, template, theme, designed, html5, css3, responsive, onepage, devshop, development, website, web, software, mobile, apps, application, server, full stack, stack, philippines, global" />
+    <meta name="author" content="spectrumone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <meta property="og:image" content="{{request.get_absolute_uri}}static/img/imac-spectrum-one-mockup.png" />
+
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logos/favicon.ico' %}" />
+    <link rel="icon" type="image/png" href="{% static 'img/logos/favicon.png' %}" />
+    <link rel="apple-touch-icon" href="{% static 'img/logos/favicon.png' %}" />
+
+    <!-- Css -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/plugins/animate.css' %}" rel="stylesheet" type="text/css" />
+    <!-- SLIDER REVOLUTION CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'rs-plugin/css/settings.css' %}" media="screen" />
+
+</head>
+<body>
+
+    <!-- Site preloader -->
+    <section id="preloader">
+        <div class="site-spinner"></div>
+    </section>
+    <!-- End Site preloader -->
+
+    <!-- Page Wraper -->
+    <div id="page-wraper">
+        <div class="wrapper">
+
+            <!-- Header -->
+            <div id="header" class="header">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="{% static 'img/logo-light-spectrum-one-v2.png' %}" />
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+
+                    <!--Navigation Icon-->
+                    <div class="nav-menu-icon">
+                        <a><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!--End Navigation Icon-->
+
+                    <!-- Navigation Menu -->
+                    <div class="nav-menu singlepage-nav">
+                        <ul class="nav-menu-inner">
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#recent-works">Recent Works</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-menu">
+                        <ul class="nav-menu-inner">
+                            <li><a href="{% url 'careers' %}">Careers</a><li>
+                        </ul>
+                    </div>
+                    <!-- End Navigation Menu -->
+                </div>
+            </div>
+            <!-- End Header -->
+
+            <!--Intro Section-->
+            <section id="intro" class="intro-fullscreen section-shadow">
+                <!--Static Hero-->
+                <div class="intro-media overlay-dark20"></div>
+                <div class="intro-caption-waper dark-bg">
+                    <div class="intro-full-height container">
+                        <div class="intro-content">
+                            <div class="intro-content-inner">
+                                <div class="intro-img-circle">
+                                    <img src="{% static 'img/logos/logo-spectrum-one.png' %}" alt="avatar01" />
+                                </div>
+                                <h1 class="intro-title mb-10"><span class="text-light">We are</span> Spectrum One</h1>
+                                <h5 class="page-title-alt mb-30">Your next full IT Solutions Provider.</h5>
+                                <a class="btn btn-md btn-white-line scroll-down" href="#about">Learn More</a>
+
+                    <div class="local-scroll hidden-xs">
+                        <a href="#about" class="scroll-down-btn scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End Static Hero-->
+
+            </section>
+            <!-- End Intro Section-->
+
+            <!-- About Section -->
+            <section id="about" class="section-padding white-bg text-center">
+                <div class="container mb-60">
+                    <div class="row text-center">
+                        <div class="col-md-6 slideInUp">
+                            <div class="spacer-15"></div>
+                            <img src="{% static 'img/imac-spectrum-one-mockup.png' %}" style="max-width: 457px; width: 100%;" alt="mockup" />
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <div class="spacer-15"></div>
+                            <h5 class="page-title-alt color mb-10">IT Solutions Provider</h5>
+                            <h2 class="page-title mb-25">SPECTRUM <span class="text-light">One</span></h2>
+                            <p class="mb-15">Spectrum One is a full-service company that provides clients with technology solutions to their business needs. We do this by giving honest technical advice, building well-designed applications, and providing our clients the best ongoing support.</p>
+
+                            <p class="mb-15">Some of our small-to-mid enterprise clients have our team as their full-time tech team - including the role of project manager and CTO. Our highly-skilled developers and designers provide excellent services for companies who would like to use technology to their advantage.</p>
+
+                            <p>Our Specialties include:
+                            <ul class="mb-35">
+                                <li>Python & Django Web Applications</li>
+                                <li>iOs & Android Mobile Applications</li>
+                            </ul>
+                            <a class="btn btn-md btn-color scroll-down" href="#contact-us" style="padding-left:10px !important; padding-right:10px !important;">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About Section -->
+
+            <!-- About Section 2 -->
+            <section id="about2" class="section-padding gray-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12 content-box mb-sm-30">
+<!--                             <div class="intro-img-circle-small">
+                                <div class="icon-top icon-black"><i class="icon icon-basic-todo-pencil"></i></div>
+                            </div> -->
+                            <h4 class="features-title">IT Consultation</h4>
+                            <p>We specialize in IT consulting for businesses by aligning technological strategy with organizational value.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 content-box mb-sm-30">
+<!--                             <div class="intro-img-circle-small">
+                                <div class="icon-top icon-black"><i class="icon icon-basic-server"></i></div>
+                            </div> -->
+                            <h4 class="features-title">Web Design & Development</h4>
+                            <p>From product design to server configuration, we offer full-cycle development services for web applications following Agile practices.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 content-box mb-sm-30">
+<!--                             <div class="intro-img-circle-small">
+                                <div class="icon-top icon-black"><i class="icon icon-basic-eye"></i></div>
+                            </div> -->
+                            <h4 class="features-title">MOBILE APPLICATION DEVELOPMENT</h4>
+                            <p>We practice design-driven development to create beautiful apps for iOS and Android.
+</p>
+                        </div>
+                    </div>
+                    <div class="spacer-45"></div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12 content-box mb-sm-30">
+<!--                             <div class="intro-img-circle-small">
+                                <div class="icon-top icon-black"><i class="icon icon-basic-server"></i></div>
+                            </div> -->
+                            <h4 class="features-title">ODOO - OPEN ERP</h4>
+                            <p>Maximize the power of Odoo with us through configuration, implementation, custom module development, hosting and support.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 content-box mb-sm-30">
+<!--                             <div class="intro-img-circle-small">
+                                <div class="icon-top icon-black"><i class="icon icon-basic-todo-pencil"></i></div>
+                            </div> -->
+                            <h4 class="features-title">MANAGED SERVICES</h4>
+                            <p>Our managed services offering allows clients to concentrate on the core of their business while leaving their IT systems to us.</p>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 content-box mb-sm-30">
+<!--                             <div class="intro-img-circle-small">
+                                <div class="icon-top icon-black"><i class="icon icon-basic-eye"></i></div>
+                            </div> -->
+                            <h4 class="features-title">OUTSOURCING & OFFSHORING</h4>
+                            <p>Let us help you establish your operations in the Philippines with your own dedicated team of skilled developers and IT staff.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About Section 2 -->
+
+            <!-- Testimonials Section-->
+	    <section id="testimonials" class="section-padding bg-image overlay-dark dark-bg text-center section-shadow-glow" style="min-height: 420px;">
+                <div class="container">
+                    <div class="white">
+                        <!-- <div class="item">
+                            <div class="testimonial text-center max-width-700">
+                                <div class="page-icon-sm"><i class="fa fa-quote-right"></i></div>
+                                <p class="lead">We're very impressed at the outcome of all projects, and have seen productivity increase and IT headaches drop dramatically.</p>
+                                <h6 class="quote-author">Crescent Moon<span class="text-regular"> Innovations International</span></h6>
+                            </div>
+                        </div> -->
+                        <div class="item">
+                            <div class="testimonial text-center max-width-700">
+                                <div class="page-icon-sm"><i class="fa fa-quote-right"></i></div>
+                                <p class="lead">We're extremely happy with their day-to-day IT support services, and would thorougly recommend them for their higher ongoing levels of customer service.</p>
+                                <h6 class="quote-author">Eaglewatch <span class="text-regular">Security Services</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Testimonials Section -->
+
+            <!-- ` Process Section -->
+            <section id="process" class="section-padding white-bg">
+                <div class="container text-center">
+                    <h2><span class="text-light">Work </span>Process</h2>
+                    <p class="max-width-700 large">We build software like we are building our own house.</p>
+                </div>
+                <div class="spacer-15"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="process-box col-md-2 col-md-offset-2 col-sm-12 col-xs-12">
+                            <div class="tipped" data-title="Step1 - Finding" data-tipper-options='{"direction":"top"}'>
+                                <div class="process-icon alt-icon-top font-size-50">1</div>
+                                <h6>Need finding</h6>
+                            </div>
+                        </div>
+                        <div class="process-box col-md-2 col-sm-12 col-xs-12">
+                            <div class="tipped" data-title="Step2 - Design" data-tipper-options='{"direction":"top"}'>
+                                <div class="process-icon alt-icon-top font-size-50">2</div>
+                                <h6>Product Design</h6>
+                            </div>
+                        </div>
+                        <div class="process-box col-md-2 col-sm-12 col-xs-12">
+                            <div class="tipped" data-title="Step3 - Development" data-tipper-options='{"direction":"top"}'>
+                                <div class="process-icon alt-icon-top font-size-50">3</div>
+                                <h6>Software Development</h6>
+                            </div>
+                        </div>
+                        <div class="process-box col-md-2 col-sm-12 col-xs-12">
+                            <div class="tipped" data-title="Step4 - Testing" data-tipper-options='{"direction":"top"}'>
+                                <div class="process-icon alt-icon-top font-size-50">4</div>
+                                <h6>Extensive Testing</h6>
+                            </div>
+                        </div>
+                        <div class="process-box col-md-2 col-sm-12 col-xs-12">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Work Process Section -->
+
+            <!-- Portfolio Section -->
+            <section id="recent-works" class="section-padding-t gray-bg">
+                <div class="container text-center">
+                    <h2>Our <span class="text-light">Recent Works</span></h2>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <ul class="portfolio-filter categories-filter">
+                            <li><a class="categories active" data-filter="*">All</a></li>
+                            <li><a class="categories" data-filter=".web">Web</a></li>
+                            <li><a class="categories" data-filter=".mobile">Mobile</a></li>
+                            <li><a class="categories" data-filter=".design">Design</a></li>
+                            <li><a class="categories" data-filter=".consultancy">Consultancy</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="portfolio-grid-fit row gallery-popup">
+
+                        {% for project in projects %}
+                        <div class="portfolio-item {{ project.tags.all|join:' ' }}">
+                            <div class="portfolio-box">
+                                <div class="portfolio-image-wrap">
+                                    <img src="{{ project.frontpage_photo.url }}" alt="" /></div>
+                                <a href="{% url 'projects:detail' project.pk %}">
+                                    <div class="portfolio-caption">
+                                        <div class="portfolio-caption-tb">
+                                            <div class="portfolio-caption-tb-cell">
+                                                <h5>{{ project.title }}</h5>
+                                                <p class="project-summary">{{ project.summary }}</p>
+                                                <button class="btn btn-color btn-lg">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </section>
+            <!-- End Portfolio Section -->
+
+            <!-- Action Box Section -->
+            <section id="action-box2" class="action-box action-black padding-30">
+                <div class="container">
+                    <div class="row action-box-left">
+                        <h4 class="action-box-title">We would like to know more about you and your needs.</h4>
+                    </div>
+                    <div class="action-box-right">
+                        <a class="btn btn-md btn-color scroll-down" href="#contact-us">Send us a message!</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Action Box Section -->
+
+            <!-- Contact Form -->
+	    <section id="contact-us" class="section-padding dark-bg bg-image overlay-dark">
+                <div class="container">
+                    <div class="row text-center">
+                        <h5 class="page-title-alt color mb-15">Wanna say hello? </h5>
+                        <h2 class="contact-page-title">Get In <span class="text-light">Touch With Us</span></h2>
+                        <h5 class="contact-page-title-alt"><span class="text-light">Or email us at</span><span style="text-transform: lowercase; font-size: 17px;"> contactus@spectrumone.co</span></h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="row">
+                                <form id="contact" class="contact-form" role="form">
+                                    <div class="col-md-12 text-center">
+                                        <h5 class="successContent">
+                                            <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+                                        </h5>
+                                        <h5 class="errorContent" style="color: #e1534f;">
+                                            <i class="fa fa-exclamation-circle left"></i>There was a problem validating the form please check and complete all the fields.
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-field-wrapper">
+                                            <input class="input-md form-full" id="name" type="text" name="form-name" placeholder="Your Name" required />
+                                        </div>
+                                        <div class="form-field-wrapper">
+                                            <input class="input-md form-full" id="email" type="email" name="form-email" placeholder="Email" required />
+                                        </div>
+                                        <div class="form-field-wrapper">
+                                            <input class="input-md form-full" id="subject" type="text" name="form-subject" placeholder="Subject" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-field-wrapper">
+                                            <textarea class="input-md form-full" id="message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-center" id="send-button">
+                                        <button class="btn-contact-submit btn btn-md btn-color" type="submit" id="form-submit" name="submit">Submit</button>
+                                    </div>
+                                    <div class="col-md-12 text-center color-white" id="loading-image" hidden>
+                                            <h4><i class="fa fa-spinner fa-spin"></i> Sending...</h4>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact Form -->
+
+            <!-- Map section -->
+            <section class="map section-shadow-light" id="map"></section>
+            <!-- End Map section -->
+
+            <!--Contact Info Section-->
+            <section id="contct-info" class="section-padding white-bg">
+                <div class="container text-center">
+                    <div class="row">
+
+                        <div class="col-md-3 mb-sm-30 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
+                        </div>
+
+                        <div class="col-md-3 mb-sm-30 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                            <div class="alt-icon-sm-top"><i class="icon icon-basic-geolocalize-05 font-size-50"></i></div>
+                            <h5 class="features-title">Address</h5>
+                            <p>
+                             92-A Prosperity West Center, West Ave.<br />
+                             Quezon City, Metro Manila, Philippines
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 mb-sm-30 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
+                            <div class="alt-icon-sm-top"><i class="icon icon-basic-headset font-size-50"></i></div>
+                            <h5 class="features-title">Contact Details</h5>
+                            <p class="contact-link">
+                                <a href="mailto:contactus@spectrumone.co"><span class="text-bold">Email :</span> contactus@spectrumone.co</a><br />
+                                <a><span class="text-bold">Call :</span> +63 917 706 4654</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact Info Section-->
+
+            <!--Footer Section-->
+            <footer id="footer" class="footer section-padding gray-bg">
+                <div class="container text-center">
+
+                    <!--Footer Logo-->
+                    <div class="footer-logo mb-25 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
+                        <a href="#">
+                            <img src="{% static 'img/logos/logo-spectrum-one.png' %}" alt="" />
+                        </a>
+                    </div>
+                    <!--End Footer Logo-->
+
+                    <!-- Copyright -->
+                    <p class="copyright mb-25">
+                        &copy; 2015 <a><b>Spectrum One</b></a>. All Rights Reserved.<br>
+                        Powered by <a href="http://www.spectrumone.co/" target="_blank"><b>Spectrum One</b></a>
+                    </p>
+                    <!-- Copyright -->
+
+                    <!-- Social -->
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/spectrumonetech" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/spectrumonetech" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/spectrum-one-it-solutions" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                    <!-- End Social -->
+
+                </div>
+            </footer>
+            <!-- End Footer Section-->
+
+        </div>
+    </div>
+    <!-- End Page Wraper -->
+
+    <!-- Js -->
+    <script src="{% static 'js/jquery-1.11.2.min.js' %}" type="text/javascript"></script>
+    <!-- <script src="{% static 'js/plugins/jquery.easing.1.3.js' %}" type="text/javascript"></script> -->
+    <script src="{% static 'js/plugins/bootstrap.min.js' %}" type="text/javascript"></script>
+    <!-- <script src="{% static 'js/plugins/jquery.fitvids.js' %}" type="text/javascript"></script> -->
+    <!-- <script src="{% static 'js/plugins/jquery.stellar.min.js' %}" type="text/javascript"></script> -->
+    <script src="{% static 'js/plugins/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+    <!-- <script src="{% static 'js/plugins/jquery.appear.js' %}" type="text/javascript"></script> -->
+    <script src="{% static 'js/plugins/jquery.fs.tipper.min.js' %}" type="text/javascript"></script>
+    <!-- <script src="{% static 'js/plugins/jquery.countTo.js' %}" type="text/javascript"></script> -->
+    <!-- <script src="{% static 'js/plugins/owl.carousel.min.js' %}" type="text/javascript"></script> -->
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script src="{% static 'rs-plugin/js/jquery.themepunch.tools.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'rs-plugin/js/jquery.themepunch.revolution.min.js' %}" type="text/javascript"></script>
+    <!-- End SLIDER REVOLUTION SCRIPTS  -->
+    <!-- <script src="{% static 'js/plugins/jquery.magnific-popup.min.js' %}" type="text/javascript"></script> -->
+    <script src="{% static 'js/plugins/jquery.backstretch.js' %}" type="text/javascript"></script>
+    <!-- <script src="{% static 'js/plugins/jquery.singlePageNav.min.js' %}" type="text/javascript"></script> -->
+    <!-- <script src="{% static 'js/plugins/wow.min.js' %}" type="text/javascript"></script> -->
+    <script src="{% static 'js/plugins/jquery.validate.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/contact-form.js' %}" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="{% static 'js/map.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/theme.js' %}" type="text/javascript"></script>
+
+
+    <!-- Background Slideshow -->
+    <script type="text/javascript">
+        $.backstretch([
+          "{% static 'img/full/front-page-1.jpg' %}",
+          "{% static 'img/full/front-page-2.jpg' %}",
+          "{% static 'img/full/front-page-3.jpg' %}"
+        ], {
+            fade: 750,
+            duration: 4000
+        });
+
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-69861045-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>

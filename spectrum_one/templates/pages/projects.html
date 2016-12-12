@@ -1,0 +1,119 @@
+{% extends 'page/base-project.html' %}
+{% load staticfiles %}
+{% block content %}
+            <!-- Header -->
+            <div id="header" class="header header-works">
+                <div class="header-inner">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="{% url 'home' %}">
+                            <img src="{% static 'img/logo-light-spectrum-one-v2.png' %}" />
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+
+                    <!--Navigation Icon-->
+                    <div class="nav-menu-icon">
+                        <a><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!--End Navigation Icon-->
+
+                    <!-- Navigation Menu -->
+                    <div class="nav-menu">
+                        <ul class="nav-menu-inner">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'home' %}#about">About Us</a></li>
+                            <li><a href="{% url 'home' %}#recent-works">Recent Works</a></li>
+                            <li><a href="{% url 'home' %}#contact-us">Contact Us</a></li>
+                            <li><a>Careers</a>
+                        </ul>
+                    </div>
+                    <!-- End Navigation Menu -->
+                </div>
+            </div>
+            <!-- End Header -->
+
+            <!-- Portfolio Section -->
+            <section class="section-padding-t-130 gray-bg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>{{ project.title }}</h3>
+                        </div>
+                    </div>
+                    <div class="spacer-30"></div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="description-fit">
+                                {{ project.text | safe }}
+
+<!--
+                                <p>With thousands of employees and hundreds of workstations spread around the Philippines, a company needed a better way to assign its employees to a workstation as close to their home as possible, with the aim to lessen their commute, and improve overall employee job satisfaction.</p>
+
+                                <h5>The Challenge</h5>
+                                <ul>
+                                    <li>To enable the company to quickly determine the most ideal workstation for a specific employee, whether it’s in the city or in the province</li>
+                                </ul>
+
+                                <h5>The Solution</h5>
+                                <ul>
+                                    <li>A web application with GIS capabilities that shows the nearest workstations for a specific employee, shown in a list and an interactive map.</li>
+                                </ul>
+
+                                <h5>The Tech Stack</h5>
+                                <ul>
+                                    <li>GeoDjango</li>
+                                    <li>PostgreSQL with PostGIS</li>
+                                    <li>HTML + CSS + JavaScript</li>
+                                    <li>Javascript</li>
+                                    <li>Leaflet JS</li>
+                                    <li>OpenStreetMap</li>
+                                    <li>Gunicorn + Nginx</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="portfolio-grid-fit-product-page gallery-popup project-photos">
+
+                                {% for photo in project.photos.all %}
+                                <div class="portfolio-item branding photography">
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image-wrap">
+                                            <img src="{{ photo.photo.url }}" alt="" />
+                                        </div>
+                                        <a class="portfolio-caption bg-semi-transparent gallery-popup-link" href="{{ photo.photo.url }}" title="{{project.title}} screenshot {{photo.pk}}">
+                                            <div class="portfolio-caption-tb">
+                                                <div class="portfolio-caption-tb-cell">
+                                                    <i class="portfolio-btn-wraper fa fa-search font-size-100 color-white"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="spacer-90"></div>
+                <div class="spacer-60"></div>
+            </section>
+            <!-- End Portfolio Section -->
+
+            <!-- Action Box Section -->
+            <section class="action-box action-black padding-20 action-box-bottom">
+                <div class="container-fluid">
+                    <div class="row action-box-left">
+                        <h4 class="action-box-title">We would like to know more about you and your needs.</h4>
+                    </div>
+                    <div class="action-box-right">
+                        <a class="btn btn-md btn-color scroll-down" href="{% url 'home' %}#contact-us">Send us a message!</a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Action Box Section -->
+{% endblock %}
