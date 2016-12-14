@@ -72,3 +72,15 @@ TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Your local stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'spectrum_one',
+        # 'NAME': 'cx_test',
+        # 'USER': 'postgres',# django root
+        # 'PASSWORD': 'ChefxchangE!',
+        'USER': 'antonio',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
