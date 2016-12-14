@@ -200,6 +200,10 @@ ADMIN_URL = env('DJANGO_ADMIN_URL')
 
 # Your production stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
 
 # Prod for local testing. whut.
 # ALLOWED_HOSTS.append('localhost')
