@@ -200,3 +200,21 @@ ADMIN_URL = env('DJANGO_ADMIN_URL')
 
 # Your production stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+# Prod for local testing. whut.
+# ALLOWED_HOSTS.append('localhost')
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'spectrum_one',
+#         # 'NAME': 'cx_test',
+#         # 'USER': 'postgres',# django root
+#         # 'PASSWORD': 'ChefxchangE!',
+#         'USER': 'antonio',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
+#
+# DEBUG = True
