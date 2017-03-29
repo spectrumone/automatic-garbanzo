@@ -1,5 +1,4 @@
 from django.views.generic import DetailView
-
 from .models import Project
 
 # Create your views here.
